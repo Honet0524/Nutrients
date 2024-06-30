@@ -39,4 +39,4 @@
 
 # ERD
 
-![ERD](https://github.com/Honet0524/Nutrients/assets/108716766/d3480cd1-114e-462c-908a-70fe2e43db23)
+![ERD](https://github.com/Honet0524/Nutrients/assets/108716766/ab51f463-3334-4911-8a78-eabd2312a158)
