@@ -32,6 +32,24 @@ public class Member extends BaseTime{
     @Column
     private String nickname;
 
+    public void patch(Member member) {
+        if (member.name != null) {
+            this.name = member.name;
+        }
+        if (member.birth != null) {
+            this.birth = member.birth;
+        }
+        if (member.memberId != null) {
+            this.memberId = member.memberId;
+        }
+        if (member.memberPassword != null) {
+            this.memberPassword = member.memberPassword;
+        }
+        if (member.nickname != null) {
+            this.nickname = member.nickname;
+        }
+    }
+
 
 //    public Member(Long id, String name, Date birth, String memberId, String memberPassword, String nickname) {
 //        this.id = id;
