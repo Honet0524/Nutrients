@@ -11,8 +11,8 @@ public class ProductDto {
     private Long id;
     private String category;
     private String productName;
-    private int price;
-    private int inventory;
+    private Integer price;
+    private Integer inventory;
 
     public Product toEntity() {
         return new Product(id, category, productName, price, inventory);

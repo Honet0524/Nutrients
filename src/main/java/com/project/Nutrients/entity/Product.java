@@ -21,9 +21,9 @@ public class Product {
     @Column
     private String productName;
     @Column
-    private int price;
+    private Integer price;
     @Column
-    private int inventory;
+    private Integer inventory;
 
     public void patch(Product product) {
         if (product.category != null) {
@@ -32,10 +32,10 @@ public class Product {
         if (product.productName != null) {
             this.productName = product.productName;
         }
-        if (product.price != 0) {
+        if (product.price != null) {
             this.price = product.price;
         }
-        if (product.inventory != 0) {
+        if (product.inventory != null) {
             this.inventory = product.inventory;
         }
     }
