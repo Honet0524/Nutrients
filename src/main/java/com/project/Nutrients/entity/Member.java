@@ -5,17 +5,40 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
+
+import java.time.LocalDate;
+import java.util.Date;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
 @Getter
 @ToString
-public class Member {
+public class Member extends BaseTime{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column
     private String name;
+    @Column
+    private Date birth;
+    @Column
+    private String memberId;
+    @Column
+    private String memberPassword;
+    @Column
+    private String nickname;
+
+
+//    public Member(Long id, String name, Date birth, String memberId, String memberPassword, String nickname) {
+//        this.id = id;
+//        this.name = name;
+//        this.birth = birth;
+//        this.memberId = memberId;
+//        this.memberPassword = memberPassword;
+//        this.nickname = nickname;
+//    }
 }
