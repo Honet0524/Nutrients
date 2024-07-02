@@ -5,10 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.LastModifiedDate;
 
-import java.time.LocalDate;
 import java.util.Date;
 
 @AllArgsConstructor
@@ -49,5 +46,4 @@ public class Member extends BaseTime{
             this.nickname = member.nickname;
         }
     }
-
 }
