@@ -19,9 +19,6 @@ public class MemberController {
     @Autowired
     private MemberService memberService;
 
-//    @Autowired
-//    private MemberRepository memberRepository;
-
     // 아이디 전체 조회
     @GetMapping("/members")
     public ArrayList<Member> index() {
@@ -41,7 +38,6 @@ public class MemberController {
         return (created != null) ?
                 ResponseEntity.status(HttpStatus.OK).body(created) :
                 ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
-
     }
 
     // 닉네임 및 비밀번호 변경.
